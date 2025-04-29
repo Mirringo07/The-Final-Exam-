@@ -179,7 +179,11 @@ footer a {
     }
 
     footer .copyright {
+        position: static;
         text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #ccc;
     }
 
     .galeria-contenido {
@@ -195,8 +199,7 @@ footer a {
     }
 
     .slider-box {
-        overflow: visible;
-        animation: none;
+        overflow: hidden;
     }
     
     .slider-box ul {
