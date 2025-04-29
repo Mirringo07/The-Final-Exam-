@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #001f3d;
     color: white;
+    overflow-x: hidden;
 }
 
 header {
@@ -93,6 +94,7 @@ footer a {
     width: 400%;
     animation: slider 15s infinite alternate ease-in-out;
     margin: 0;
+    overflow: hidden;
 }
 
 .slider-box li {
