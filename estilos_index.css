@@ -145,10 +145,6 @@ footer a {
         font-size: 2rem;
     }
 
-    .slider-box {
-        margin: 0 10px;
-    }
-
     .ga_img {
         margin: 0 20px;
     }
@@ -180,10 +176,6 @@ footer a {
         width: 100%;
     }
 
-    .slider-box ul {
-        width: 100%;
-    }
-
     footer .copyright {
         text-align: center;
     }
@@ -194,17 +186,32 @@ footer a {
         padding: 10px;
     }
     
-    .slider-box {
-        width: 100%;
-        max-width: 95%;
-        margin: 0 auto 20px auto;
-    }
-    
     .desarrollo {
         margin: 0;
         padding: 20px;
         width: 95%;
     }
+
+    .slider-box {
+        overflow: visible;
+        animation: none;
+    }
+    
+    .slider-box ul {
+        width: 400%; /* importante conservar esto */
+    }
+    
+    .slider-box li {
+        width: 100%; /* se asegura de que solo se muestre una imagen a la vez */
+    }    
+    
+    .slider-box img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
     
 }
 
