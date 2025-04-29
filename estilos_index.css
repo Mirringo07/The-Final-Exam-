@@ -143,12 +143,14 @@ html {
     align-items: center;
     gap: 20px;
     padding: 30px;
+    list-style-type: none;
 }
 
 /* Ajustes opcionales para que la lista no sea demasiado ancha */
 .desarrollo {
     padding: 30px;
     margin: 0 0 40px 40px;
+    list-style-type: none;
 }
 
 /* Ajuste del tamaño del carrusel */
