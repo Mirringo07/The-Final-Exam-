@@ -77,12 +77,12 @@ footer a {
 
 .desarrollo {
     text-align: left;
-    margin: 150px 30px 30px 30px;
+    margin: 130px 0 30px 70px;
 }
 
 .slider-box {
     border-radius: 40px;
-    width: 100%;
+    width: 750px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
@@ -216,8 +216,6 @@ footer a {
         object-fit: cover;
         border-radius: 10px;
     }
-    
-    
 }
 
 html {
