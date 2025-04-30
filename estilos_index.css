@@ -12,31 +12,37 @@ header {
     background-color: #444;
     color: white;
     padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* Logo independiente, alineado al borde izquierdo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 120px;
+    height: auto;
 }
 
 header h1 {
-    margin: 30px;
+    margin: 0;
     font-size: 3rem;
 }
 
 nav ul {
-    margin-top: 10px;
-    list-style-type: none;
+    margin-top: 20px;
+    list-style: none;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav li {
-    display: inline;
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 section {
@@ -203,7 +209,7 @@ footer a {
     }
     
     .slider-box ul {
-        width: 400%; /* importante conservar esto */
+        width: 400%;
     }
     
     .slider-box li {
