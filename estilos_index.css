@@ -288,13 +288,13 @@ html {
 }
 
 .botones-descarga button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #232d38;
+    color: rgb(84, 84, 84);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: not-allowed;
     opacity: 1;
 }
 
@@ -353,4 +353,9 @@ footer .copyright {
 
 .bloque p {
     font-size: 16px;
+}
+
+.info a{
+    color: rgb(57, 186, 245);
+    text-decoration: none;
 }
