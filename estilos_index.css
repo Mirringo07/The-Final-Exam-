@@ -83,6 +83,8 @@ footer a {
 .desarrollo {
     text-align: left;
     margin: 130px 0 30px 70px;
+    padding: 30px;
+    list-style-type: none;
 }
 
 .slider-box {
@@ -125,7 +127,6 @@ footer a {
     100% { margin-left: -300%; }
 }
 
-/* Media para celulares y tabletas*/
 @media (max-width: 991px) {
     body {
         padding: 0;
@@ -152,13 +153,21 @@ footer a {
         font-size: 2rem;
     }
 
+    .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 100px;
+    }
+
     .ga_img {
         margin: 0 20px;
     }
 
     .desarrollo {
-        margin: 50px 20px;
-        padding: 30px;
+        margin: 0;
+        padding: 20px;
+        width: 95%;
     }
 
     .desarrollo ul {
@@ -196,25 +205,19 @@ footer a {
         align-items: center;
         padding: 10px;
     }
-    
-    .desarrollo {
-        margin: 0;
-        padding: 20px;
-        width: 95%;
-    }
 
     .slider-box {
         overflow: hidden;
     }
-    
+
     .slider-box ul {
         width: 400%;
     }
-    
+
     .slider-box li {
         width: 100%; 
     }    
-    
+
     .slider-box img {
         width: 100%;
         height: auto;
@@ -233,12 +236,6 @@ html {
     align-items: center;
     gap: 20px;
     padding: 30px;
-    list-style-type: none;
-}
-
-.desarrollo {
-    padding: 30px;
-    margin: 0 0 40px 40px;
     list-style-type: none;
 }
 
@@ -300,19 +297,20 @@ footer .copyright {
 .contenido-bloques {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .bloque {
-    width: 250px;
-    background-color: #002b5c;
-    border-radius: 15px;
+    background-color: #003366;
     padding: 20px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: transform 0.3s;
+    width: 250px;
+    color: white;
 }
 
 .bloque:hover {
@@ -320,10 +318,11 @@ footer .copyright {
 }
 
 .bloque img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    margin-top: 15px;
     border-radius: 10px;
-    margin-bottom: 15px;
+    object-fit: cover;
+    height: auto;
 }
 
 .bloque p {
