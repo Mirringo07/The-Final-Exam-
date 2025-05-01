@@ -16,7 +16,6 @@ header {
     text-align: center;
 }
 
-/* Logo independiente, alineado al borde izquierdo */
 .logo {
     position: absolute;
     top: 20px;
@@ -126,7 +125,7 @@ footer a {
     100% { margin-left: -300%; }
 }
 
-/* Media Query for tablets and small devices */
+/* Media para celulares y tabletas*/
 @media (max-width: 991px) {
     body {
         padding: 0;
@@ -213,7 +212,7 @@ footer a {
     }
     
     .slider-box li {
-        width: 100%; /* se asegura de que solo se muestre una imagen a la vez */
+        width: 100%; 
     }    
     
     .slider-box img {
