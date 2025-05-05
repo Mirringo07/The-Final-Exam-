@@ -33,6 +33,7 @@ header .logo {
     height: auto;
     margin-right: 20px;
     margin-left: 50px;
+    margin: auto;
 }
 
 header h1 {
@@ -302,4 +303,69 @@ legend {
     70% { margin-left: -200%; }
     75% { margin-left: -300%; }
     100% { margin-left: -300%; }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: row; /* Mantiene horizontal en móvil */
+        flex-wrap: wrap;     /* Permite que pasen a otra línea si no caben */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    section {
+        max-width: 80%;
+        padding: 20px;
+    }
+
+    #descripcion p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .bloque {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .contenido-bloques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    fieldset {
+        padding: 20px 20px 30px 20px;
+        margin: 20px auto;
+    }
+
+    legend {
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    footer .copyright {
+        font-size: 0.9em;
+        color: #b2bec3;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
 }
