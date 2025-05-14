@@ -305,24 +305,28 @@ legend {
     100% { margin-left: -300%; }
 }
 
+/* Modificación para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    nav ul {
-        flex-direction: row; /* Mantiene horizontal en móvil */
-        flex-wrap: wrap;     /* Permite que pasen a otra línea si no caben */
-        justify-content: center;
+    header {
+        padding: 10px 5px;
         gap: 10px;
     }
 
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
     section {
-        max-width: 80%;
+        max-width: 90%;
         padding: 20px;
     }
 
