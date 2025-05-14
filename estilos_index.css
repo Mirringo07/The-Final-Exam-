@@ -321,8 +321,14 @@ legend {
     }
 
     nav ul {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 8px;
+        justify-content: space-between; 
+        flex: 1; 
+    }
+
+    nav a {
+        font-size: 1em;
     }
 
     section {
