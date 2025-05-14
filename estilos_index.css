@@ -323,8 +323,8 @@ legend {
     nav ul {
         flex-wrap: nowrap;
         gap: 8px;
-        justify-content: space-between; 
-        flex: 1; 
+        justify-content: space-between;
+        flex: 1;
     }
 
     nav a {
@@ -379,3 +379,4 @@ legend {
         margin-top: 10px;
     }
 }
+
