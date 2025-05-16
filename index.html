@@ -9,6 +9,7 @@
 
     <title>The Final Math Exam!</title>
     <link rel="stylesheet" href="estilos_index.css">
+    <link rel="icon" href="Imagenes/Imagen.png" type="image/png">
 </head>
 
 <body>
@@ -28,21 +29,37 @@
     </header>
 
     <main>
-        <section id="descripcion">
-            <fieldset>
-                <legend><h2>¿De qué trata el juego?</h2></legend>
+
+         <section id="descripcion">
+          <fieldset>
+            <legend>
+              <h2>¿De qué trata el juego?</h2>
+            </legend>
+
+            <div class="descripcion-contenido">
+              <div class="video-trailer">
+                <video controls poster="Imagenes/Imagen_Poster.png">
+                  <source src="videos/trailer.mp4" type="video/mp4" />
+                  Tu navegador no soporta la reproducción de video.
+                </video>
+              </div>
+
+              <div class="texto-trailer">
                 <p>
-                    Jugarás como <strong>Tom</strong>, un estudiante que, tras perder un examen decisivo, debe recuperarlo en secreto para corregirlo.
-                    <br><br>
-                    Para lograrlo, se infiltra en la casa del profesor, enfrentándose a desafíos y acertijos matemáticos que pondrán a prueba su lógica.
-                    <br><br>
-                    Si te equivocas, recibirás explicaciones útiles que te ayudarán a mejorar y aprender de tus errores.
-                    <br><br>
-                    Inspirado en juegos como <em>Undertale</em>, <em>Granny</em> y <em>Hello Neighbor</em>, <strong>The Final Math Exam!</strong> mezcla suspenso y aprendizaje en una aventura única.
-                    <br><br>
-                    ¿Podrás ayudar a Tom a salvar el año escolar y demostrar que no es un tonto como parece?
+                  Jugarás como <strong>Tom</strong>, un estudiante que, tras perder un examen decisivo, debe recuperarlo en secreto para corregirlo.
+                  <br /><br />
+                  Para lograrlo, se infiltra en la casa del profesor, enfrentándose a desafíos y acertijos matemáticos que pondrán a prueba su lógica.
+                  <br /><br />
+                  Si te equivocas, recibirás explicaciones útiles que te ayudarán a mejorar y aprender de tus errores.
+                  <br /><br />
+                  Inspirado en juegos como <em>Undertale</em>, <em>Granny</em> y <em>Hello Neighbor</em>, <strong>The Final Math Exam!</strong> mezcla suspenso y         aprendizaje en una aventura única.
+                  <br /><br />
+                  ¿Podrás ayudar a Tom a salvar el año escolar y demostrar que no es un tonto como parece?
                 </p>
-            </fieldset>
+              </div>
+            </div>
+
+          </fieldset>
         </section>
 
         <section id="galeria">
@@ -50,15 +67,23 @@
                 <legend><h2 class="ga_img">Galería de Imágenes</h2></legend>
                 <div class="galeria-contenido">
 
-                    <div class="slider-box">
-                        <ul>
-                            <li><img src="Imagenes/img1.png" alt="Imagen 1 del juego"></li>
-                            <li><img src="Imagenes/img2.png" alt="Imagen 2 del juego"></li>
-                            <li><img src="Imagenes/img3.png" alt="Imagen 3 del juego"></li>
-                            <li><img src="Imagenes/img4.png" alt="Imagen 4 del juego"></li>
-                        </ul>
+                    <div class="carousel-wrapper">
+
+                         <button id="btn-prev" aria-label="Imagen anterior">&#9664;</button>
+                     
+                         <div class="slider-box">
+                             <ul id="slider-list">
+                                 <li><img src="Imagenes/img1.png" alt="Imagen 1 del juego"></li>
+                                 <li><img src="Imagenes/img2.png" alt="Imagen 2 del juego"></li>
+                                 <li><img src="Imagenes/img3.png" alt="Imagen 3 del juego"></li>
+                                 <li><img src="Imagenes/img4.png" alt="Imagen 4 del juego"></li>
+                             </ul>
                     </div>
+
+                    <button id="btn-next" aria-label="Siguiente imagen">&#9654;</button>
+
                 </div>
+
             </fieldset>
         </section>
 
@@ -118,9 +143,6 @@
                         <button disabled>Windows</button>
                         <button disabled>Android</button>
                     </div>
-                    <div class="link-subir">
-                        <a href="#arriba">Subir &#8679;</a>
-                    </div>
                 </div>
             </fieldset>
         </section>
@@ -136,5 +158,15 @@
 
         <p class="copyright">Todos los derechos de autor reservados | © 2025 The Final Math Exam!</p>
     </footer>
+
+    <button id="btn-top" title="Volver arriba" aria-label="Volver arriba">
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+             <path d="M6 10L12 4L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+         </svg>
+   </button>
+
+    <script src="scripts.js"></script>
+
 </body>
 </html>
